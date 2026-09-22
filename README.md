@@ -22,6 +22,13 @@ Early planning. See [SPEC.md](SPEC.md) for the full plan.
 
 ## Running locally
 
-Setup instructions will be added once the project is scaffolded.
+Requires [Node.js](https://nodejs.org). Built with Next.js.
+
+```bash
+npm install
+npm run dev
+```
+
+Then open http://localhost:3000.
 
 The app needs an AI API key, stored in a local `.env` file. Never commit this file.

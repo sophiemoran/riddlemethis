@@ -16,3 +16,5 @@ Check before every commit:
 ```bash
 git ls-files | grep -E '^\.env$' || echo "OK: .env is not tracked"
 ```
+
+@AGENTS.md

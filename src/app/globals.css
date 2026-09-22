@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+/* Riddle Me This theme: bright whites, forest green, silver accents.
+   Define colors here only, then use them as Tailwind classes (e.g. bg-forest-700, text-silver-500). */
+@theme {
+  --color-forest-50: #f1f8f3;
+  --color-forest-100: #dcefe2;
+  --color-forest-200: #b9dfc5;
+  --color-forest-500: #3a7d56;
+  --color-forest-600: #2a6443;
+  --color-forest-700: #1f4d33;
+  --color-forest-800: #173a26;
+  --color-forest-900: #10291b;
+
+  --color-silver-100: #f4f6f7;
+  --color-silver-200: #e3e7ea;
+  --color-silver-300: #c9cfd4;
+  --color-silver-400: #a3acb3;
+  --color-silver-500: #737c83;
+  --color-silver-600: #555d63;
+
+  --color-skin: #f3cba5;
+  --color-blush: #f2a7a0;
+
+  --font-sans: var(--font-geist-sans);
+  --font-serif: var(--font-fraunces);
+
+  --animate-float: float 4s ease-in-out infinite;
+  --animate-wave: wave 2.4s ease-in-out infinite;
+  --animate-pop: pop 0.6s ease-out both;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes wave {
+  0%, 60%, 100% { transform: rotate(0deg); }
+  15% { transform: rotate(-14deg); }
+  30% { transform: rotate(10deg); }
+  45% { transform: rotate(-8deg); }
+}
+
+@keyframes pop {
+  from { opacity: 0; transform: translateY(8px) scale(0.96); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation: none !important;
+  }
+}
+
+body {
+  background: white;
+  color: var(--color-forest-900);
+}
